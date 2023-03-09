@@ -1,0 +1,8 @@
+After creating our profile on GitHub, we'd add a new repo(repositary) to make our future tasts and homework visible to our teacher. Off course, we may create private repo-s also to save whatever we want. 
+F1 opens command palette. Here is where we can create, rename, delete or duplicate files using File.utils' tools.
+The <>code window allows us to share our repo.
+We can change theme colors using for example Andromeda or GitHub Theme extentions.
+For creating new GitHub repo from local terminal git init
+In order to add our local files to a new GitHub repositary we need to do following steps:
+git config --global user.name "shushmanuk"      to be recognized by GitHub
+git config --global user.email "shushanik.manukian@gmail.com"   to let GitHub to identify our email address
