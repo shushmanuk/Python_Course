@@ -11,6 +11,16 @@ else:
     print("Odd")
     
 #version3
+x = -21
+y = x % 2
+print("even" * (y == 0) + "odd" * y)
+
+#version4
+x = 0
+y = x % 2
+print("even" * (not y) + "odd" * y)
+
+#version4
 y = ("Even", "Odd")
 x = int(input("Enter a number:" ))
 print(y[x % 2])
