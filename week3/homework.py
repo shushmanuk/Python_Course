@@ -10,9 +10,9 @@ Examples
 "Mubashir" ➞ "Hello, my Love!" 
 """
 
-name = input("Hi! What's your name?" )
-print(("Hello," + name) * (name != "Mubashir"))
-print(("Hello, my love!") * (name == "Mubashir"))
+# name = input("Hi! What's your name?" )
+# print(("Hello," + name) * (name != "Mubashir"))
+# print(("Hello, my love!") * (name == "Mubashir"))
 
 """ 
 2. Create a function that takes two arguments. 
@@ -23,9 +23,9 @@ a,b = 9, 10 ➞ True
 a,b = 9, 9 ➞ False
 a,b = 1, 9 ➞ True
 """
-a = int(input("a = " ))
-b = int(input("b = " ))
-print((a + b == 10) or (a == 10) or (b == 10))
+# a = int(input("a = " ))
+# b = int(input("b = " ))
+# print((a + b == 10) or (a == 10) or (b == 10))
 
 """
 3. Create a function that returns True if 
@@ -35,8 +35,8 @@ Examples
 -55 ➞ True
 37 ➞ False
 """
-num = int(input("Please, enter a number evenly divisible by 5 "))
-print(num % 5 == 0)
+# num = int(input("Please, enter a number evenly divisible by 5 "))
+# print(num % 5 == 0)
 
 """
 4. Extra Knowledge 
@@ -49,15 +49,25 @@ Examples
 "ABC", "DE" ➞ False
 "hello", "edabit" ➞ False
 """
+#version1
+my_name = "Shushanik"
+my_surname = "Manukyan"
+# print(len(my_name) == len(my_surname))
 
-
+#version2
+# your_name = input("Your name: ")
+# your_surname = input("Your surname: ")
+# print(len(your_name) == len(your_surname))
 """
 5. Given a string, return True if its length is even or 
 False if the length is odd.
 """ 
+given_word = "Antananarivo"
+# print((int(len(given_word)) % 2) == 0)
 
-
-
+#version2
+word = input("Please, type a word ")
+print((int(len(word)) % 2) == 0)
 
 """
 6. Create a function that takes a string txt and a number n 
