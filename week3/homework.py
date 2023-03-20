@@ -81,4 +81,4 @@ Examples
 
 text = input("Please, enter a text! ")
 num = int(input("How many times to repeat? "))
-print(text * num)
+print((text * num) and ("Not a string!" * (text != str))) 
