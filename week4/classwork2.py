@@ -42,7 +42,7 @@ print(output * key + ("Not a string!" * (output != key)))
 #version2
 # text, repeat = input("Please, type a text! "), int(input("How many times to repeat? "))
 # print("Not a string!" * isinstance(text, int) + str(text * repeat) * isinstance(text, str))
-
+"""
 work = "A new black shoe met an old pair of black boots and asked for black brash for shoes."
 print(work.upper())
 print(work.count("black"))
@@ -50,3 +50,23 @@ print(work.find("k"))
 print(work.index("c"))
 
 print("One", "two", "three", sep = ", ")
+"""
+6. 
+#version2
+ineq = ("3 > 2 > 0")
+change = ineq.split(" ")
+#համեմատում ենք զույգ տեղերում եղած տարրերը, ստուգում համեմատության տարրերը
+10.
+input_word = input("Type a word: ")
+isogram = len(set(input_word)) >= len(input_word)
+# print(isogram)
+#uppers and lowers are not the same
+
+new_word = input("\nPlease, write a word! ")
+word = new_word.lower()
+a = word.count("a") 
+e = word.count("e") 
+i = word.count("i") 
+o = word.count("o") 
+u = word.count("u") 
+print(a + e + i + o + u)
