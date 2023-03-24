@@ -90,6 +90,12 @@ key = type(text) == str
 print(text * repeat * key, "Not a string!" * (not key))
 
 #version2
+text, repeat = "Dream", 42
+print("Not a string!" * isinstance(text, int) + str(text * repeat) * isinstance(text, str))
+
+#version3 is not working 
 text = input("Please, enter a text! ")
 num = int(input("How many times to repeat? "))
-print((text * num) or ("Not a string!" * (text != str)))
+key = type(text) == str
+output = text * num
+print((output * key), ("Not a string!" * (output != key)))
