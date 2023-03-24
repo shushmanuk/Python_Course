@@ -81,11 +81,12 @@ EXTRA Knowledge
 """
 #version1
 new_word = input("\nPlease, write a word! ")
-a = new_word.count("a") 
-e = new_word.count("e") 
-i = new_word.count("i") 
-o = new_word.count("o") 
-u = new_word.count("u") 
+word = new_word.lower()
+a = word.count("a") 
+e = word.count("e") 
+i = word.count("i") 
+o = word.count("o") 
+u = word.count("u") 
 print(a + e + i + o + u)
 
 
