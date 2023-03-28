@@ -98,7 +98,7 @@ Examples
 "01/15/2019" ➞ "20191501"
 """
 date = "14/06/1995"
-date = date.replace("/", "")
+date = date.split("/")
 day, month, year = date[:2], date[2:4], date[4:]
 print(year, month, day)
 
