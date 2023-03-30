@@ -111,6 +111,12 @@ Examples
 12, 10 ➞ [12, 24, 36, 48, 60, 72, 84, 96, 108, 120]
 17, 6 ➞ [17, 34, 51, 68, 85, 102]
 """
+#version1
+numbers, length = 10, 4
+result = list(range(numbers, numbers * length + 1, numbers))
+print(result)
+
+#version2
 numbers, lengths = 3, 12
 while numbers <= 10:
     print(numbers * lengths)
@@ -126,19 +132,9 @@ Examples
 [7, 8, 11, 66], "Des" ➞ [66, 11, 8, 7]
 [1, 2, 3, 4], "None" ➞ [1, 2, 3, 4]
 """
-#version1 is not complete !!!
-# lst = list(input("Please, enter a list of numbers: "))
-# srt = input("Please, enter a sort of ordering:\n\"Asc\":a list in ascending order.\n\"Des\":a list in descending order.\n\"None\": a list without any modification.")
-# srt = srt.capitalize()
-# lst2 = sorted(lst)
-# lst3 = sorted(lst2, reverse = True)
-# lst = [2, 4, 1, 3, 2, 1, 0, 6]
-# print(((srt == "Asc") * lst2) + (srt == "Des" * lst3))
-# srt = srt == "Des"
-# lst.reverse()
-# print(lst2 * srt)
-# print(((sort == "Asc") * asc) + ((sort == "Des") * des) + ((sort == "None") * input_l)) 
-# version2
-lst = [41, 83, -7, 19, 0, 24, 7.3]
-s = list("kapkulibrary")
-print(sorted(lst, key=lambda x: x))
+lst = input("Please, enter a list of numbers: ")
+srt = input("Please, enter a sort of ordering:\n\"Asc\":a list in ascending order.\n\"Des\":a list in descending order.\n\"None\": a list without any modification.")
+srt = srt.capitalize()
+lst1 = lst.split()
+lst2 = int(lst1[0]), int(lst1[1]), int(lst1[2]), ... , int(lst1[-1])
+print(lst2)

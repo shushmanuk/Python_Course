@@ -7,12 +7,16 @@ equal = [(2 == 2), (1 == 1), (0 == 0)]
 print(all(equal))
 
 #any()	#Returns True if any item in an iterable object is true
-equals = 2 == 2
-print(any(equals))
+equal = [(2 != 2), (1 == 1), (0 > 0)]
+print(any(equal))
+          
+#ascii()	#Returns a readable version of an object. Replaces none-ascii characters with escape character
 
-ascii()	#Returns a readable version of an object. Replaces none-ascii characters with escape character
-bin()	#Returns the binary version of a number
-bool()	#Returns the boolean value of the specified object
+#bin()	#Returns the binary version of a number
+num = 144
+print(bin(num))
+
+#bool()	#Returns the boolean value of the specified object
 bytearray()	#Returns an array of bytes
 bytes()	#Returns a bytes object
 callable()	#Returns True if the specified object is callable, otherwise False
