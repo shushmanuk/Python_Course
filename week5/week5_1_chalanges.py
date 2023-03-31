@@ -36,11 +36,10 @@ find_bob(["Bob", "Layla", "Kaitlyn", "Patricia"]) ➞ 0
 find_bob(["Jimmy", "Layla", "James"]) ➞ -1
 Notes
 Assume all names start with a capital letter and are lowercase thereafter (i.e. don't worry about finding "BOB" or "bob")."""
-# need your advice 
+
 names = ["Noah", "Adam", "Neriah", "Luna"]
-find_index = names.index("Bob")
-condition = "Bob" in names
-print((find_index * condition), (find_index * (not condition) * (-1)))
+condition = "Bob" in names and names.index("Bob")
+print((not condition and isinstance(condition, bool) * -1) + condition)
 
 """
 EXTRA Knowledge
@@ -145,7 +144,6 @@ sampleDict = {
     }
 }
 """
-#need your help here
 sampleDict = {
     "class": {
         "student": {
@@ -160,7 +158,7 @@ sampleDict = {
 print(sampleDict.get("history"))
 
 """
-+10. Rename key of a dictionary
+10. Rename key of a dictionary
 Write a program to rename a key city to a location in the following dictionary.
 Given:
 sample_dict = {
