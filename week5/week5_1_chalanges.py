@@ -155,7 +155,7 @@ sampleDict = {
         }
     }
 }
-print(sampleDict.get("history"))
+print(sampleDict.get("class").get("student").get("marks").get("history"))
 
 """
 10. Rename key of a dictionary
