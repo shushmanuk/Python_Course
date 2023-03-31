@@ -64,12 +64,19 @@ count_unique("apple", "play") ➞ 5
 # "a", "e", "l", "p", "y"
 "sore", "zebra" ➞ 7
 "a", "soup" ➞ 5 """
-
+#version1
+two_strings = ['Eyjafjallajökull', 'Reykjavik']
+result = two_strings[0] + two_strings[1]
+print(set(result))
+#version2
 two_strings = ['Eyjafjallajökull', 'Reykjavik']
 one_string = ''.join(two_strings)
 result = one_string.lower()
 print(len(set(result)))
-
+#version3
+two_strings = ['Eyjafjallajökull', 'Reykjavik']
+result = two_strings[0] + two_strings[1]
+print(len(dict.fromkeys(result)))
 """
 6. Create a function that takes a dictionary of student names and returns a list of student names in alphabetical order.
 Examples
