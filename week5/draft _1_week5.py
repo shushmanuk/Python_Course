@@ -68,7 +68,7 @@ print(sample_dict) """
 # list_of_names = ["Noah", "Adam", "Neriah", "Luna"]
 # find_name = list_of_names.pop("Bob", -1)
 # print(find_name)
-"""
+
 sampleDict = {
     "class": {
         "student": {
@@ -80,7 +80,7 @@ sampleDict = {
         }
     }
 }
-print(sampleDict.get("marks"))"""
+# print(sampleDict.values())
 
 """book_dict = {
     "Week1": 2,
@@ -122,10 +122,10 @@ print("Readings' list is:", book_list)"""
 # print(sorted(unique_sort))
 
 
-names = ["Noah", "Adam", "Neriah", "Luna"]
-find_index = names.index("Bob")
-condition = "Bob" in names
-print((find_index * condition), (find_index * (not condition) * (-1)))
+# names = ["Noah", "Adam", "Neriah", "Luna"]
+# find_index = names.index("Bob")
+# condition = "Bob" in names
+# print((find_index * condition), (find_index * (not condition) * (-1)))
 
 """HELPFUL
 # Sort string by integer value use key as int
@@ -155,3 +155,29 @@ print(technology)
 # Output
 # ['Spark', 'Pyspark', 'Pandas', 'NumPy', 'Java', 'Hyperion', 'Hadoop']
 END"""
+
+
+names = ["Noah", "Adam", "Neriah", "Luna"]
+condition = "Bob" in names and names.index("Bob")
+# print((not condition and isinstance(condition, bool) * -1) + condition)
+
+sampleDict = {
+    "class": {
+        "student": {
+            "name": "Mike",
+            "marks": {
+                "physics": 70,
+                "history": 80
+            }
+        }
+    }
+}
+# print(sampleDict.get("class").get("student").get("marks").get("history"))
+
+two_strings = ['Eyjafjallajökull', 'Reykjavik']
+result = two_strings[0] + two_strings[1]
+print(len(set(result)))
+
+two_strings = ['Eyjafjallajökull', 'Reykjavik']
+result = two_strings[0] + two_strings[1]
+print(len(dict.fromkeys(result)))

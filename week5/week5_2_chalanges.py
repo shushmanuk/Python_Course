@@ -16,34 +16,48 @@ common1 = list(set(lst1).intersection(lst2))
 common2= list(set(common1).intersection(lst3))
 print(sum(common2))
 
-"""
-EXTRA Knowledge
+"""EXTRA Knowledge
 2. Write a function that takes a list of numbers and returns a list with two elements:
 
 The first element should be the sum of all even numbers in the list.
 The second element should be the sum of all odd numbers in the list.
+
 Example
 [1, 2, 3, 4, 5, 6] ➞ [12, 9]
 # 2 + 4 + 6 = 12 and 1 + 3 + 5 = 9
 [-1, -2, -3, -4, -5, -6] ➞ [-12, -9]
 [0, 0] ➞ [0, 0]
-Notes
-Count 0 as an even number.
-"""
 
-"""
-3. Create a function that takes a dictionary of objects like { "name": "John", "notes": [3, 5, 4] } and returns a dictionary of objects like { "name": "John", "top_note": 5 }.
+Notes
+Count 0 as an even number."""
+
+new_list = [12, 24, 33, 36, 11, 0, -9]
+even_list = [even for even in new_list if even % 2 != 0]
+odd_list = [odd for odd in new_list if odd % 2 == 0]
+print([sum(even_list), sum(odd_list)])
+
+"""3. Create a function that takes a dictionary of objects like 
+{ "name": "John", "notes": [3, 5, 4] } and returns a dictionary 
+of objects like { "name": "John", "top_note": 5 }.
 
 Examples
 top_note({ "name": "John", "notes": [3, 5, 4] }) ➞ { "name": "John", "top_note": 5 }
 
 top_note({ "name": "Max", "notes": [1, 4, 6] }) ➞ { "name": "Max", "top_note": 6 }
 
-top_note({ "name": "Zygmund", "notes": [1, 2, 3] }) ➞ { "name": "Zygmund", "top_note": 3 }
-"""
+top_note({ "name": "Zygmund", "notes": [1, 2, 3] }) ➞ { "name": "Zygmund", "top_note": 3 }"""
 
-"""
-EXTRA Knowledge
+note_dict = {
+    "name": "Mark",
+    "notes": [6, 8, 8]
+}
+max_note = note_dict.get("notes")
+max_note = max(max_note)
+del note_dict["notes"]
+note_dict["top_note"] = max_note
+print(note_dict)
+
+"""EXTRA Knowledge
 4. Write a function that takes a list of numbers and returns a list with two elements:
 
 The first element should be the sum of all even numbers in the list.
@@ -54,11 +68,14 @@ sum_odd_and_even([1, 2, 3, 4, 5, 6]) ➞ [12, 9]
 
 sum_odd_and_even([-1, -2, -3, -4, -5, -6]) ➞ [-12, -9])
 
-sum_odd_and_even([0, 0]) ➞ [0, 0])
-"""
+sum_odd_and_even([0, 0]) ➞ [0, 0])"""
 
-"""
-5. You work for a manufacturer, and have been asked to calculate 
+new_list = [12, 24, 33, 36, 11, 0, -9]
+even_list = [even for even in new_list if even % 2 != 0]
+odd_list = [odd for odd in new_list if odd % 2 == 0]
+print([sum(even_list), sum(odd_list)])
+
+"""5. You work for a manufacturer, and have been asked to calculate 
 the total profit made on the sales of a product. You are given a 
 dictionary containing the cost price per unit (in dollars), sell 
 price per unit (in dollars), and the starting inventory. Return 
@@ -81,8 +98,14 @@ profit({
   "cost_price": 2.77,
   "sell_price": 7.95,
   "inventory": 8500
-}) ➞ 44030
-"""
+}) ➞ 44030"""
+
+cost_price = float(input("Please, enter a cost price: "))
+sell_price = float(input("Please, enter a sell price: "))
+inventory = int(input("Please, enter an inventory: "))
+price_per_piece = sell_price - cost_price
+profit = inventory * price_per_piece
+print(int(profit))
 
 """6. A number is said to be Harshad if it's exactly divisible by 
 the sum of its digits. Create a function that determines whether 
@@ -114,8 +137,7 @@ if(temp % sum1 == 0):
 else:
     print("False")
 
-"""
-EXTRA Knowledge
+"""EXTRA Knowledge
 7. Given an input string, reverse the string word by word.
 
 Examples
@@ -128,8 +150,8 @@ Notes
 A word is defined as a sequence of non-space characters.
 The input string may contain leading or trailing spaces. However, 
 your reversed string should not contain leading or trailing spaces.
-Try to solve this in linear time.
-"""
+Try to solve this in linear time."""
+
 #version1
 string = input("Please, write a sentence: ")
 words = string.split(" ")[::-1]
@@ -143,8 +165,7 @@ for word in words:
     new_string.insert(0, word)
 print(" ".join(new_string))
 
-"""
-Extra Knowledge
+"""Extra Knowledge
 8. Create a function that builds a word from the scrambled letters 
 contained in the first list. Use the second list to establish each 
 position of the letters in the first list. Return a string from the 
@@ -155,8 +176,17 @@ word_builder(["g", "e", "o"], [1, 0, 2]) ➞ "ego"
 
 word_builder(["e", "t", "s", "t"], [3, 0, 2, 1]) ➞ "test"
 
-word_builder(["b", "e", "t", "i", "d", "a"], [1, 4, 5, 0, 3, 2]) ➞ "edabit"
-"""
+word_builder(["b", "e", "t", "i", "d", "a"], [1, 4, 5, 0, 3, 2]) ➞ "edabit" """
+
+#version1
+letters = ["b", "k", "o", "o"]
+indexes = [0, 2, 3, 1]
+letters = [letters[i] for i in indexes]
+print(letters)  
+#version2
+letters, indexes = ["k", "o", "b", "o"], [2, 1, 3, 0]
+for i in indexes:
+    print(letters[i]) #prints each letter on different line
 
 """9. Create a function to test if a string is a valid pin or not.
 A valid pin has:
@@ -225,8 +255,7 @@ set1 = {7, 17, 177, 1717}
 set2 = {15, 17, 150, 170}
 print(set1.difference(set2))
 
-"""
-EXTRA Knowledge
+"""EXTRA Knowledge
 13. Given an input string, reverse the string word by word (reversed word also).
 
 Examples
@@ -235,5 +264,8 @@ Examples
 Notes
 A word is defined as a sequence of non-space characters.
 The input string may contain leading or trailing spaces. However, your reversed string should not contain leading or trailing spaces.
-Try to solve this in linear time.
-"""
+Try to solve this in linear time."""
+
+string = input("Please, write a sentence: ")
+words = string[::-1]
+print("".join(words))
