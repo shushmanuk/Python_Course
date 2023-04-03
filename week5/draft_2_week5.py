@@ -69,13 +69,13 @@ print(sum(lst5))
 # words = string[::-1]
 # print("".join(words))
 
-profit = {
-    "cost_price" : (float(input("Please, enter a cost price: "))),
-    "sell_price" : (float(input("Please, enter a sell price: "))),
-    "inventory" : (int(input("Please, enter an inventory: ")))
-}
+# profit = {
+#     "cost_price" : (float(input("Please, enter a cost price: "))),
+#     "sell_price" : (float(input("Please, enter a sell price: "))),
+#     "inventory" : (int(input("Please, enter an inventory: ")))
+# }
 
-print(int((profit.get("sell_price") - profit.get("cost_price")) * (profit.get("inventory"))))
+# print(int((profit.get("sell_price") - profit.get("cost_price")) * (profit.get("inventory"))))
 
 # note_dict = {
 #     "name": "Mark",
@@ -109,3 +109,11 @@ print(int((profit.get("sell_price") - profit.get("cost_price")) * (profit.get("i
 # del note_dict["notes"]
 # note_dict["top_note"] = max(max_note)
 # print(note_dict)
+
+
+note_dict = {
+    "name": "Mark",
+    "notes": [6, 8, 8]
+}
+note_dict["top_note"] = max(note_dict.pop("notes")) 
+print(note_dict)

@@ -51,9 +51,7 @@ note_dict = {
     "name": "Mark",
     "notes": [6, 8, 8]
 }
-max_note = note_dict.get("notes")
-del note_dict["notes"]
-note_dict["top_note"] = max(max_note)
+note_dict["top_note"] = max(note_dict.pop("notes"))
 print(note_dict)
 
 """EXTRA Knowledge
