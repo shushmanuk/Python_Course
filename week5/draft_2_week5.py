@@ -69,12 +69,13 @@ print(sum(lst5))
 # words = string[::-1]
 # print("".join(words))
 
-# cost_price = float(input("Please, enter a cost price: "))
-# sell_price = float(input("Please, enter a sell price: "))
-# inventory = int(input("Please, enter an inventory: "))
-# price_per_piece = sell_price - cost_price
-# profit = inventory * price_per_piece
-# print(int(profit))
+profit = {
+    "cost_price" : (float(input("Please, enter a cost price: "))),
+    "sell_price" : (float(input("Please, enter a sell price: "))),
+    "inventory" : (int(input("Please, enter an inventory: ")))
+}
+
+print(int((profit.get("sell_price") - profit.get("cost_price")) * (profit.get("inventory"))))
 
 # note_dict = {
 #     "name": "Mark",
@@ -99,3 +100,12 @@ print(sum(lst5))
 # indexes = [0, 2, 3, 1]
 # letters = [letters[i] for i in indexes]
 # print(letters)         
+
+# note_dict = {
+#     "name": "Mark",
+#     "notes": [6, 8, 8]
+# }
+# max_note = note_dict.get("notes")
+# del note_dict["notes"]
+# note_dict["top_note"] = max(max_note)
+# print(note_dict)
