@@ -178,8 +178,7 @@ word_builder(["e", "t", "s", "t"], [3, 0, 2, 1]) ➞ "test"
 word_builder(["b", "e", "t", "i", "d", "a"], [1, 4, 5, 0, 3, 2]) ➞ "edabit" """
 
 #version1
-letters = ["b", "k", "o", "o"]
-indexes = [0, 2, 3, 1]
+letters, indexes = ["b", "k", "o", "o"], [0, 2, 3, 1]
 letters = [letters[i] for i in indexes]
 print(letters)  
 #version2

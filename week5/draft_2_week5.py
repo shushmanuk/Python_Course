@@ -96,10 +96,9 @@ print(sum(lst5))
 # for i in indexes:
 #     print(letters[i])
 
-# letters = ["b", "k", "o", "o"]
-# indexes = [0, 2, 3, 1]
+# letters, indexes = ["b", "k", "o", "o"], [0, 2, 3, 1]
 # letters = [letters[i] for i in indexes]
-# print(letters)         
+# print(letters)          
 
 # note_dict = {
 #     "name": "Mark",
@@ -111,9 +110,9 @@ print(sum(lst5))
 # print(note_dict)
 
 
-note_dict = {
-    "name": "Mark",
-    "notes": [6, 8, 8]
-}
-note_dict["top_note"] = max(note_dict.pop("notes")) 
-print(note_dict)
+# note_dict = {
+#     "name": "Mark",
+#     "notes": [6, 8, 8]
+# }
+# note_dict["top_note"] = max(note_dict.pop("notes")) 
+# print(note_dict)
