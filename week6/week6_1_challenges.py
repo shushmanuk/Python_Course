@@ -136,7 +136,13 @@ string_pairs("airforces") ➞ ["ai", "rf", "or", "ce", "s*"]
 Notes
 Return [] if the given string is empty."""
 
-#is not done yet
+string = "antananariv"
+str_list = list(string)
+if len(string) % 2 == 0:
+    print([i + j for i, j in zip(str_list[::2], str_list[1::2])])
+else:
+    str_list.append("*"[-1])
+    print([i + j for i, j in zip(str_list[::2], str_list[1::2])])
 
 """7. Create a function that takes two parameters and, if both parameters 
 are strings, add them as if they were integers or if the two parameters 

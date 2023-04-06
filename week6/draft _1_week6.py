@@ -84,10 +84,18 @@
 # else:
 #     print("None")
 
-mixed_list = ["4", 13, "mm", 7, -9, "bb"]
-# print(type(mixed_list))
-for item in mixed_list:
-    if isinstance(item, int):
-        print(item)
-    elif isinstance(item, str):
-        print("")
+# mixed_list = ["4", 13, "mm", 7, -9, "bb"]
+# # print(type(mixed_list))
+# for item in mixed_list:
+#     if isinstance(item, int):
+#         print(item)
+#     elif isinstance(item, str):
+#         print("")
+
+string = "antananarivo"
+str_list = list(string)
+if len(string) % 2 == 0:
+    print([i + j for i, j in zip(str_list[::2], str_list[1::2])])
+else:
+    str_list.append("*"[-1])
+    print([i + j for i, j in zip(str_list[::2], str_list[1::2])])
