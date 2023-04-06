@@ -1,4 +1,5 @@
-"""1. Luke Skywalker has family and friends. Help him remind them who is who. Given a string with a name, return the relation of that person to Luke.
+"""1. Luke Skywalker has family and friends. Help him remind them who is who. 
+Given a string with a name, return the relation of that person to Luke.
 
 Person	Relation
 Darth Vader	father
@@ -108,16 +109,16 @@ There won't be any float values.
 You won't get strings with both numbers and letters in them.
 Although the task may be easy, try keeping your code as clean 
 and as readable as possible!"""
-#is not complete yet
-variable1, variable2, variable3 = "13", "2", "divide"
-if variable3 == "add":
-    print(int(float(variable1) + float(variable2)))
-elif variable3 == "subtract":
-    print(int(float(variable1) - float(variable2)))
-elif variable3 == "multiple":
-    print(int(float(variable1) * float(variable2)))
-elif variable3 == "divide":
-    print(int(float(variable1) / float(variable2)))
+
+var1, var2, oper = "13", "2", "divide"
+if oper == "add":
+    print(var1 + var2)
+elif oper == "subtract":
+    print(var1 - var2)
+elif oper == "multiple":
+    print(var1 * var2)
+elif oper == "divide":
+    print(var1 / var2)
 else:
     print("Undefined")
 
@@ -188,18 +189,18 @@ return the value as a string.
 If the answer is "undefined", return "undefined" (e.g. dividing by zero).
 For divide, go ahead and round down to an integer."""
 
-variable1, variable2, variable3 = "14", "2", "divide"
-if variable3 == "add":
-    print(int(float(variable1) + float(variable2)))
-    # if float(variable1) / float(variable2)
-elif variable3 == "subtract":
-    print(int(float(variable1) - float(variable2)))
-elif variable3 == "multiplied":
-    print(int(float(variable1) * float(variable2)))
-elif variable3 == "divide":
-    print(int(float(variable1) / float(variable2)))
-else:
-    print("Undefined")
+var1, var2, oper = "13", "0", "divide"
+if oper == "add":
+    print(str(int(var1) + int(var2)))
+elif oper == "subtract":
+    print(str(int(var1) - int(var2)))
+elif oper == "multiple":
+    print(str(int(var1) * int(var2)))
+elif oper == "divide":
+    if var2 != 0:
+         print(str(int(int(var1) / int(var2))))
+    else: 
+        print("Undefined")   
 
 """9. Check if the given string consists of only letters and spaces 
 and if every letter is in lower case.
