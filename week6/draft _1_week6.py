@@ -113,7 +113,31 @@ elif oper == "subtract":
 elif oper == "multiple":
     print(str(int(var1) * int(var2)))
 elif oper == "divide":
-    if var2 != 0:
+    if int(var2) != 0:
          print(str(int(int(var1) / int(var2))))
     else: 
         print("Undefined")
+
+
+
+
+# var1, var2, oper = "13", "2.04", "divide"
+# if not(var1.isnumeric() and var2.isnumeric()):
+#     print("Please, enter numeric values!")
+#     exit()
+# var1, var2 = int(var1), int(var2)
+# return_value = "Undefined"
+# if oper == "add":
+#     return_value = var1 + var2
+# elif oper == "subtract":
+#     return_value = var1 - var2
+# elif oper == "multiple":
+#     return_value = var1 * var2
+# elif oper == "divide" and var2 != 0:
+#     return_value = var1 // var2
+# elif oper == "divide" and var2 == 0:
+#     return_value = "var2 != 0"
+# else: 
+#     return_value = "Please, correct the operator name!"
+# print(str(return_value))
+

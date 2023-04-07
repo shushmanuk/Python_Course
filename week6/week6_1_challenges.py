@@ -110,17 +110,40 @@ You won't get strings with both numbers and letters in them.
 Although the task may be easy, try keeping your code as clean 
 and as readable as possible!"""
 
-var1, var2, oper = "13", "2", "divide"
+#version1
+var1, var2, oper = "13", "0", "divide"
 if oper == "add":
-    print(var1 + var2)
+    print(str(int(var1) + int(var2)))
 elif oper == "subtract":
-    print(var1 - var2)
+    print(str(int(var1) - int(var2)))
 elif oper == "multiple":
-    print(var1 * var2)
+    print(str(int(var1) * int(var2)))
 elif oper == "divide":
-    print(var1 / var2)
-else:
-    print("Undefined")
+    if int(var2) != 0:
+         print(str(int(int(var1) / int(var2))))
+    else: 
+        print("Undefined")
+
+#version2
+var1, var2, oper = "13", "2.04", "divide"
+if not(var1.isnumeric() and var2.isnumeric()):
+    print("Please, enter numeric values!")
+    exit()
+var1, var2 = int(var1), int(var2)
+return_value = "Undefined"
+if oper == "add":
+    return_value = var1 + var2
+elif oper == "subtract":
+    return_value = var1 - var2
+elif oper == "multiple":
+    return_value = var1 * var2
+elif oper == "divide" and var2 != 0:
+    return_value = var1 // var2
+elif oper == "divide" and var2 == 0:
+    return_value = "var2 != 0"
+else: 
+    return_value = "Please, correct the operator name!"
+print(str(return_value))
 
 """6. Create a function that takes a string s and returns a list of 
 two-paired characters. If the string has an odd number of characters, 
