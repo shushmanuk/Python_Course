@@ -110,41 +110,22 @@ You won't get strings with both numbers and letters in them.
 Although the task may be easy, try keeping your code as clean 
 and as readable as possible!"""
 
-#version1
-var1, var2, oper = "13", "0", "divide"
-if oper == "add":
-    print(str(int(var1) + int(var2)))
-elif oper == "subtract":
-    print(str(int(var1) - int(var2)))
-elif oper == "multiple":
-    print(str(int(var1) * int(var2)))
-elif oper == "divide":
-    if int(var2) != 0:
-         print(str(int(int(var1) / int(var2))))
-    else: 
-        print("Undefined")
+change_list = ["0", 14, 22, True, "True", 11, "11"]
 
-#version2
-var1, var2, oper = "13", "2.04", "divide"
-if not(var1.isnumeric() and var2.isnumeric()):
-    print("Please, enter numeric values!")
-    exit()
-var1, var2 = int(var1), int(var2)
-return_value = "Undefined"
-if oper == "add":
-    return_value = var1 + var2
-elif oper == "subtract":
-    return_value = var1 - var2
-elif oper == "multiple":
-    return_value = var1 * var2
-elif oper == "divide" and var2 != 0:
-    return_value = var1 // var2
-elif oper == "divide" and var2 == 0:
-    return_value = "var2 != 0"
-else: 
-    return_value = "Please, correct the operator name!"
-print(str(return_value))
+return_value = []
 
+for item in change_list:
+    if isinstance(item, str):
+        return_value.append(item.capitalize()+ "!")
+    elif isinstance(item, bool):
+        return_value.append(not item)
+    elif isinstance(item, int):
+        if item % 2:
+            return_value.append(item)
+        else:
+            return_value.append(item + 1)
+print(return_value)    
+                                        
 """6. Create a function that takes a string s and returns a list of 
 two-paired characters. If the string has an odd number of characters, 
 add an asterisk * in the final pair.
@@ -212,6 +193,7 @@ return the value as a string.
 If the answer is "undefined", return "undefined" (e.g. dividing by zero).
 For divide, go ahead and round down to an integer."""
 
+#version1
 var1, var2, oper = "13", "0", "divide"
 if oper == "add":
     print(str(int(var1) + int(var2)))
@@ -220,10 +202,31 @@ elif oper == "subtract":
 elif oper == "multiple":
     print(str(int(var1) * int(var2)))
 elif oper == "divide":
-    if var2 != 0:
+    if int(var2) != 0:
          print(str(int(int(var1) / int(var2))))
     else: 
-        print("Undefined")   
+        print("Undefined")
+
+#version2
+var1, var2, oper = "13", "2.04", "divide"
+if not(var1.isnumeric() and var2.isnumeric()):
+    print("Please, enter numeric values!")
+    exit()
+var1, var2 = int(var1), int(var2)
+return_value = "Undefined"
+if oper == "add":
+    return_value = var1 + var2
+elif oper == "subtract":
+    return_value = var1 - var2
+elif oper == "multiple":
+    return_value = var1 * var2
+elif oper == "divide" and var2 != 0:
+    return_value = var1 // var2
+elif oper == "divide" and var2 == 0:
+    return_value = "var2 != 0"
+else: 
+    return_value = "Please, correct the operator name!"
+print(str(return_value))  
 
 """9. Check if the given string consists of only letters and spaces 
 and if every letter is in lower case.

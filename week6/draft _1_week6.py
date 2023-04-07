@@ -68,7 +68,7 @@
 #     print("False")
 
 
-# num_list = [-11, 1, 14, 17, 21, 49]
+# num_list = [-11, 1, 14, 14, 17, 21, 49]
 # if all(i < j for i, j in zip(num_list, num_list[1:])):
 #     print("increasing")
 # elif all(i > j for i, j in zip(num_list, num_list[1:])):
@@ -105,18 +105,18 @@
 #     str_list.append("*"[-1])
 #     print([i + j for i, j in zip(str_list[::2], str_list[1::2])])
 
-var1, var2, oper = "13", "0", "divide"
-if oper == "add":
-    print(str(int(var1) + int(var2)))
-elif oper == "subtract":
-    print(str(int(var1) - int(var2)))
-elif oper == "multiple":
-    print(str(int(var1) * int(var2)))
-elif oper == "divide":
-    if int(var2) != 0:
-         print(str(int(int(var1) / int(var2))))
-    else: 
-        print("Undefined")
+# var1, var2, oper = "13", "0", "divide"
+# if oper == "add":
+#     print(str(int(var1) + int(var2)))
+# elif oper == "subtract":
+#     print(str(int(var1) - int(var2)))
+# elif oper == "multiple":
+#     print(str(int(var1) * int(var2)))
+# elif oper == "divide":
+#     if int(var2) != 0:
+#          print(str(int(int(var1) / int(var2))))
+#     else: 
+#         print("Undefined")
 
 
 
@@ -141,3 +141,18 @@ elif oper == "divide":
 #     return_value = "Please, correct the operator name!"
 # print(str(return_value))
 
+change_list = ["0", 14, 22, True, "True", 11, "11"]
+
+return_value = []
+
+for item in change_list:
+    if isinstance(item, str):
+        return_value.append(item.capitalize()+ "!")
+    elif isinstance(item, bool):
+        return_value.append(not item)
+    elif isinstance(item, int):
+        if item % 2:
+            return_value.append(item)
+        else:
+            return_value.append(item + 1)
+print(return_value)    
