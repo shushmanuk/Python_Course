@@ -1,133 +1,134 @@
-"""abs()"""	#Returns the absolute value of a number
+# abs()	#Returns the absolute value of a number
 
-"""all()"""	#Returns True if all items in an iterable object are true
+# all()	#Returns True if all items in an iterable object are true
 
-"""any()"""	#Returns True if any item in an iterable object is true
-          
-"""ascii()"""	#Returns a readable version of an object. Replaces none-ascii characters with escape character
+# any()	#Returns True if any item in an iterable object is true
 
-"""bin()"""	#Returns the binary version of a number
+# ascii()	#Returns a readable version of an object.
+# Replaces none-ascii characters with escape character
 
-"""bool()"""	#Returns the boolean value of the specified object
+# bin() 	#Returns the binary version of a number
 
-"""bytearray()"""	#Returns an array of bytes
+# bool()	#Returns the boolean value of the specified object
 
-"""bytes()"""	#Returns a bytes object
+# bytearray()	#Returns an array of bytes
 
-"""callable()"""	#Returns True if the specified object is callable, otherwise False
+# bytes()	#Returns a bytes object
 
-"""chr()"""	#Returns a character from the specified Unicode code.
+# callable()	#Returns True if the specified object is callable, otherwise False
 
-"""classmethod()"""	#Converts a method into a class method
+# chr()	#Returns a character from the specified Unicode code.
 
-"""compile()"""	#Returns the specified source as an object, ready to be executed
+# classmethod()	#Converts a method into a class method
 
-"""complex()"""	#Returns a complex number
+# compile()	#Returns the specified source as an object, ready to be executed
 
-"""delattr()"""	#Deletes the specified attribute (property or method) from the specified object
+# complex()	#Returns a complex number
 
-"""dict()"""	#Returns a dictionary (Array)
+# delattr()	#Deletes the specified attribute (property or method) from the specified object
 
-"""dir()"""	#Returns a list of the specified object's properties and methods
+# dict()	#Returns a dictionary (Array)
 
-"""divmod()"""	#Returns the quotient and the remainder when argument1 is divided by argument2
+# dir()	#Returns a list of the specified object's properties and methods
 
-"""enumerate()"""	#Takes a collection (e.g. a tuple) and returns it as an enumerate object
+# divmod()	#Returns the quotient and the remainder when argument1 is divided by argument2
 
-"""eval()"""	#Evaluates and executes an expression
+# enumerate()	#Takes a collection (e.g. a tuple) and returns it as an enumerate object
 
-"""exec()"""	#Executes the specified code (or object)
+# eval()	#Evaluates and executes an expression
 
-"""filter()"""	#Use a filter function to exclude items in an iterable object
+# exec()	#Executes the specified code (or object)
 
-"""float()"""	#Returns a floating point number
+# filter()	#Use a filter function to exclude items in an iterable object
 
-"""format()"""	 #Formats a specified value
+# float()	#Returns a floating point number
 
-"""frozenset()"""	#Returns a frozenset object
+# format()	 #Formats a specified value
 
-"""getattr()""" 	#Returns the value of the specified attribute (property or method)
+# frozenset()	#Returns a frozenset object
 
-"""globals()"""	#Returns the current global symbol table as a dictionary
+# getattr() 	#Returns the value of the specified attribute (property or method)
 
-"""hasattr()"""	#Returns True if the specified object has the specified attribute (property/method)
+# globals()	#Returns the current global symbol table as a dictionary
 
-"""hash()"""	#Returns the hash value of a specified object
+# hasattr()	#Returns True if the specified object has the specified attribute (property/method)
 
-"""help()"""	#Executes the built-in help system
+# hash()	#Returns the hash value of a specified object
 
-"""hex()"""	#Converts a number into a hexadecimal value
+# help()	#Executes the built-in help system
 
-"""id()"""	#Returns the id of an object
+# hex()	#Converts a number into a hexadecimal value
 
-"""input()"""	#Allowing user input
+# id()	#Returns the id of an object
 
-"""int()"""	#Returns an integer number
+# input()	#Allowing user input
 
-"""isinstance()"""	#Returns True if a specified object is an instance of a specified object
+# int()	#Returns an integer number
 
-"""issubclass()"""	#Returns True if a specified class is a subclass of a specified object
+# isinstance()	#Returns True if a specified object is an instance of a specified object
 
-"""iter()"""	#Returns an iterator object
+# issubclass()	#Returns True if a specified class is a subclass of a specified object
 
-"""len()"""	#Returns the length of an object
+# iter()	#Returns an iterator object
 
-"""list()""" #Returns a list
+# len()	#Returns the length of an object
 
-"""locals()"""	#Returns an updated dictionary of the current local symbol table
+# list() #Returns a list
 
-"""map()"""	#Returns the specified iterator with the specified function applied to each item
+# locals()	#Returns an updated dictionary of the current local symbol table
 
-"""max()"""	#Returns the largest item in an iterable
+# map()	#Returns the specified iterator with the specified function applied to each item
 
-"""memoryview()"""	#Returns a memory view object
+# max()	#Returns the largest item in an iterable
 
-"""min()"""	#Returns the smallest item in an iterable
+# memoryview()	#Returns a memory view object
 
-"""next()"""	#Returns the next item in an iterable
+# min()	#Returns the smallest item in an iterable
 
-"""object()"""	#Returns a new object
+# next()	#Returns the next item in an iterable
 
-"""oct()"""	#Converts a number into an octal
+# object()	#Returns a new object
 
-"""open()"""	#Opens a file and returns a file object
+# oct()	#Converts a number into an octal
 
-"""ord()"""	#Convert an integer representing the Unicode of the specified character
+# open()	#Opens a file and returns a file object
 
-"""pow()"""	#Returns the value of x to the power of y
+# ord()	#Convert an integer representing the Unicode of the specified character
 
-"""print()"""	#Prints to the standard output device
+# pow()	#Returns the value of x to the power of y
 
-"""property()"""	#Gets, sets, deletes a property
+# print()	#Prints to the standard output device
 
-"""range()"""	#Returns a sequence of numbers, starting from 0 and increments by 1 (by default)
+# property()	#Gets, sets, deletes a property
 
-"""repr()"""	#Returns a readable version of an object
+# range()	#Returns a sequence of numbers, starting from 0 and increments by 1 (by default)
 
-"""reversed()"""	#Returns a reversed iterator
+# repr()	#Returns a readable version of an object
 
-"""round()"""	#Rounds a numbers
+# reversed()	#Returns a reversed iterator
 
-"""set()"""	#Returns a new set object
+# round()	#Rounds a numbers
 
-"""setattr()"""	#Sets an attribute (property/method) of an object
+# set()	#Returns a new set object
 
-"""slice()"""	#Returns a slice object
+# setattr()	#Sets an attribute (property/method) of an object
 
-"""sorted()"""	#Returns a sorted list
+# slice()	#Returns a slice object
 
-"""staticmethod()"""	#Converts a method into a static method
+# sorted()	#Returns a sorted list
 
-"""str()"""	#Returns a string object
+# staticmethod()	#Converts a method into a static method
 
-"""sum()"""	#Sums the items of an iterator
+# str()	#Returns a string object
 
-"""super()"""	#Returns an object that represents the parent class
+# sum()	#Sums the items of an iterator
 
-"""tuple()"""	#Returns a tuple
+# super()	#Returns an object that represents the parent class
 
-"""type()"""	#Returns the type of an object
+# tuple()	#Returns a tuple
 
-"""vars()"""	#Returns the __dict__ property of an object
+# type()	#Returns the type of an object
 
-"""zip()"""	#Returns an iterator, from two or more iterators
+# vars() #Returns the __dict__ property of an object
+
+# zip()	#Returns an iterator, from two or more iterators
