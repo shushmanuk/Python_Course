@@ -117,9 +117,9 @@ result = list(range(numbers, numbers * length + 1, numbers))
 print(result)
 
 #version2
-numbers, lengths = 3, 12
-while numbers <= 10:
-    print(numbers * lengths)
+numbers, length = 3, 12
+while numbers <= 12:
+    print(numbers * length)
     numbers += 1
 """
 10. Create a function that takes a list of numbers lst, a string s and return a list of numbers as per the following rules:
