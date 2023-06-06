@@ -56,9 +56,9 @@ print(max(lst) - min(lst))
 lst1, lst2 = [1, 2, 3], [21, 22, 23]
 lst1.extend(lst2)
 print(lst1)
-# or
-# lst1 += lst2
-# print(lst1)
+
+lst1 += lst2
+print(lst1)
 
 # 6. Given a list of numbers, return True if the sum of the values
 # in the list is less than 100; otherwise return False.
@@ -95,8 +95,8 @@ print(cond * "even" + "odd" * (not cond))
 # "12/31/2019" ➞ "20193112"
 # "01/15/2019" ➞ "20191501"
 
-date = "MM/DD/YYYY"
-date_list = date.split("/")[::-1]
+DATE = "MM/DD/YYYY"
+date_list = DATE.split("/")[::-1]
 print(''.join(date_list))
 
 # EXTRA Knowledge
