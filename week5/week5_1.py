@@ -39,9 +39,11 @@ print((255 - color_invert[0], 255 - color_invert[1], 255 - color_invert[2],))
 # Assume all names start with a capital letter and are lowercase thereafter
 # (i.e. don't worry about finding "BOB" or "bob").
 
-find_bob = ["Mag", "Simon", "Sam", "Jack", "Tom", "Bob"]
-n = "Bob" in find_bob
-print(((not n) * "Bob is not in list") or (n * find_bob.index("Bob")))
+find_bob = ["Mag", "Bob", "Simon", "Sam", "Jack", "Tom"]
+bob_is = "Bob" in find_bob
+bob_index = bob_is and find_bob.index("Bob")
+cond = isinstance(bob_is, bool)
+print(((not bob_is) and cond * -1) + bob_index)
 
 # EXTRA Knowledge
 # 4. Given a list of numbers, write a function that returns a list that...
@@ -72,6 +74,12 @@ count_unique = ("a", "sooouuuulmup")
 combined = "".join(count_unique)
 total_number = len(set(combined))
 print(total_number)
+
+# #when we have only two strings
+# count_unique = ("a", "sooouuuulmup")
+# combined = list(count_unique[0] + count_unique[1])
+# total_number = len(set(combined))
+# print(total_number)
 
 # 6. Create a function that takes a dictionary of student names and returns
 # a list of student names in alphabetical order.
